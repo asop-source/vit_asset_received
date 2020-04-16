@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+            <record id="view_received_form" model="ir.ui.view">
+            <field name="name">vit.transfer.form</field>
+            <field name="model">vit.transfer</field>
+            <field name="inherit_id" ref="vit_asset.view_vit_transfer_form"/>
+            <field name="arch" type="xml">
+                <button name="action_approve" position="replace">
+                    <button string="Received" groups="vit_asset.group_confirm_asset_accounting" icon="fa-check-circle" states="open" type="object" name="action_received"/>
+                </button>
+            </field>
+          </record>
+
+  </data>
+</odoo>
